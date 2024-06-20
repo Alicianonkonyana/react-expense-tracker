@@ -31,6 +31,10 @@ const AddTransanction = () => {
         <br />
         <select value={category} onChange={(e) => setCategory(e.target.value)}>
           <option value="">Select Category</option>
+
+          <option value="fee">fees</option>
+          <option value="transport">transport</option>
+          <option value="salary">Salary</option>
           <option value="food">Food</option>
           <option value="rent">Rent</option>
           <option value="entertainment">Entertainment</option>
