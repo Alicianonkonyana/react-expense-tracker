@@ -73,6 +73,9 @@ h3 {
   font-family: "Roboto", sans-serif;
   text-align: left;
 }
+.negative {
+  color: #c0392b;
+}
 
 h4 {
   text-align: left;

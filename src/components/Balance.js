@@ -8,7 +8,7 @@ const Balance = () => {
   return (
     <div>
       <h4>Your balance</h4>
-      <h1 id="balance">${total}</h1>
+      <h1 className={total < 0 ? "negative" : ""}>${total}</h1>
     </div>
   );
 };
