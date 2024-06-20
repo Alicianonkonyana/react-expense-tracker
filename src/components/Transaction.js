@@ -12,6 +12,9 @@ const Transaction = ({ transaction }) => {
           {sign}
           {Math.abs(transaction.amount)}
         </span>{" "}
+        <span>
+          <strong>{transaction.category}</strong>
+        </span>
         <button
           onClick={() => deleteTransaction(transaction.id)}
           className="delete-btn"
