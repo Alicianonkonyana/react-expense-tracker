@@ -15,12 +15,11 @@ const IncomeExpense = () => {
   return (
     <div className="IncomeExpense-container">
       <div className="row">
-        <div className="col-6">Income</div>
-        <div className="col-6">Expense</div>
-      </div>
-      <div className="row">
-        <div className="col-6">${income}</div>
-        <div className="col-6">${expense}</div>
+        <div className="col-6 income">Income</div>
+        <div className="col-6 expense">Expense</div>
+
+        <div className="col-6 income-value">${income}</div>
+        <div className="col-6 expense-value">${expense}</div>
       </div>
     </div>
   );

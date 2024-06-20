@@ -1,6 +1,8 @@
 import "./App.css";
 import Header from "./components/Header";
 import "./App.css";
+import "typeface-roboto";
+
 import Balance from "./components/Balance";
 import IncomeExpense from "./components/IncomeExpense";
 import TransanctionList from "./components/TransanctionList";
