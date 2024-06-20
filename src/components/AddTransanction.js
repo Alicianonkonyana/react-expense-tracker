@@ -6,6 +6,7 @@ const AddTransanction = () => {
   const [text, setText] = useState("");
   const [amount, setAmount] = useState("");
   const { addTransaction } = useContext(GlobalContext);
+
   const onSubmit = (e) => {
     e.preventDefault();
     const newTransaction = {
@@ -14,7 +15,10 @@ const AddTransanction = () => {
       amount: +amount,
     };
     addTransaction(newTransaction);
+    setText("");
+    setAmount("");
   };
+
   return (
     <div className="AddTransaction">
       <h3>Add new Transaction</h3>
@@ -27,19 +31,21 @@ const AddTransanction = () => {
           type="text"
           className="input-text"
           placeholder="Enter text"
+          value={text}
           onChange={(e) => setText(e.target.value)}
         />
 
         <label htmlFor="amount" className="amount-label">
           Amount
           <br />
-          (minus-expense,add-income)
+          (minus-expense, add-income)
         </label>
         <br />
         <input
           type="number"
           className="enter-amount"
           placeholder="Enter amount"
+          value={amount}
           onChange={(e) => setAmount(e.target.value)}
         />
 
